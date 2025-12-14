@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Keranjang - Bambang Elektronik</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-row">
+      <h1 class="logo">Bambang Elektronik</h1>
+      <nav class="nav">
+        <a href="index.html">Beranda</a>
+        <a href="products.html">Produk</a>
+        <a href="cart.html">Keranjang</a>
+        <span id="authArea"></span>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Keranjang Belanja</h2>
+
+    <table class="cart-table">
+      <thead>
+        <tr>
+          <th>Produk</th>
+          <th>Harga</th>
+          <th>Qty</th>
+          <th>Subtotal</th>
+          <th>Aksi</th>
+        </tr>
+      </thead>
+      <tbody id="cart-body"></tbody>
+    </table>
+
+    <div class="cart-actions">
+      <h3 id="cart-total"></h3>
+      <button class="btn" onclick="checkout()">Checkout</button>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Bambang Elektronik</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/app.js"></script>
+  <script>
+    renderCart();
+  </script>
+</body>
+</html>
+

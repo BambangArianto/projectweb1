@@ -1,0 +1,118 @@
+:root{
+  --primary:#0077b6;
+  --accent:#0099ff;
+  --bg1:linear-gradient(120deg,#dcefff,#ffffff);
+  --card:#ffffff;
+  --muted:#666;
+}
+
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+body{
+  font-family:Inter, Arial, sans-serif;
+  background:var(--bg1);
+  color:#222;
+}
+
+/* ================= HEADER ================= */
+.site-header{
+  background:var(--primary);
+}
+
+.header-row{
+  max-width:1150px;
+  margin:auto;
+  padding:16px 20px;
+  display:flex;
+  align-items:center;
+}
+
+.logo{
+  font-size:22px;
+  font-weight:700;
+  color:#fff;
+}
+
+.nav{
+  margin-left:auto;
+  display:flex;
+  align-items:center;
+  gap:14px;
+}
+
+.nav a{
+  color:#fff;
+  text-decoration:none;
+  font-weight:600;
+  font-size:15px;
+}
+
+.nav a:hover{
+  opacity:0.85;
+}
+
+#authArea{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  margin-left:10px;
+}
+
+#authArea a,
+#authArea button{
+  background:rgba(255,255,255,0.12);
+  border:none;
+  color:#fff;
+  padding:6px 12px;
+  border-radius:6px;
+  font-size:14px;
+  cursor:pointer;
+}
+
+#authArea button:hover,
+#authArea a:hover{
+  background:rgba(255,255,255,0.2);
+}
+
+.hi-user{
+  color:#fff;
+  font-weight:600;
+  margin-right:4px;
+}
+
+/* ================= LAYOUT ================= */
+.container{
+  max-width:1150px;
+  margin:auto;
+  padding:20px;
+}
+
+.center-screen{
+  min-height:80vh;
+  display:grid;
+  place-items:center;
+}
+
+/* ================= HERO ================= */
+.hero{
+  display:flex;
+  align-items:center;
+  gap:30px;
+}
+
+.hero-left h2{
+  font-size:32px;
+  margin-bottom:10px;
+}
+
+.hero-left p{
+  color:var(--muted);
+  max-width:420px;
+  margin-bottom:16px;
+}
+
+.her

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Register - Bambang Elektronik</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+<header class="site-header">
+  <div class="container header-row">
+    <h1 class="logo">Bambang Elektronik</h1>
+    <nav class="nav">
+      <a href="index.html">Beranda</a>
+      <a href="products.html">Produk</a>
+      <a href="cart.html">Keranjang</a>
+      <span id="authArea"></span>
+    </nav>
+  </div>
+</header>
+
+<main class="center-screen">
+  <div class="card auth-card">
+    <h2>Registrasi</h2>
+
+    <input id="reg-username" placeholder="Username">
+    <input id="reg-password" type="password" placeholder="Password">
+
+    <button class="btn" onclick="registerUser()">Daftar</button>
+
+    <p>Sudah punya akun? <a href="login.html">Login</a></p>
+  </div>
+</main>
+
+<script src="assets/js/app.js"></script>
+</body>
+</html>
